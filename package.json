@@ -1,0 +1,24 @@
+{
+  "name": "espi",
+  "version": "1.0.0",
+  "description": "Web application for ESPI",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack serve",
+    "build": "webpack"
+  },
+  "author": "Danil Zmievskiy",
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^7.1.2",
+    "postcss": "^8.4.38",
+    "postcss-loader": "^8.1.1",
+    "postcss-preset-env": "^9.5.14",
+    "style-loader": "^4.0.0",
+    "tailwindcss": "^3.4.4",
+    "webpack": "^5.91.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.4"
+  }
+}
