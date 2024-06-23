@@ -52,6 +52,8 @@ function renderSignin() {
     let mainNode = document.querySelector('section[name="main"]')
     let navNode = document.querySelector('nav')
     let loginNode = document.querySelector('section[name="signin"]')
+    let storNode = document.querySelector('section[name="storage"]')
+    storNode.hidden = true
     navNode.hidden = true
     mainNode.hidden = true
     loginNode.hidden = false
@@ -61,6 +63,8 @@ function renderFromSignin() {
     let mainNode = document.querySelector('section[name="main"]')
     let navNode = document.querySelector('nav')
     let loginNode = document.querySelector('section[name="signin"]')
+    let storNode = document.querySelector('section[name="storage"]')
+    storNode.hidden = true
     loginNode.hidden = true
     navNode.hidden = false
     mainNode.hidden = false
