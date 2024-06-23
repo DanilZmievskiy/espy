@@ -1,11 +1,13 @@
 module.exports = {
-    content: ['./dist/*.html'],
+    content: ['./dist/*.html', 'node_modules/preline/dist/*.js'],
     theme: {
       extend: {},
     },
     variants: {
       extend: {},
     },
-    plugins: [],
+    plugins: [
+      require('preline/plugin')
+    ],
   }
   
