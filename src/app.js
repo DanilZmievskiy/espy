@@ -48,6 +48,24 @@ function renderMain() {
     mainNode.hidden = false
 }
 
+function renderSignin() {
+    let mainNode = document.querySelector('section[name="main"]')
+    let navNode = document.querySelector('nav')
+    let loginNode = document.querySelector('section[name="signin"]')
+    navNode.hidden = true
+    mainNode.hidden = true
+    loginNode.hidden = false
+}
+
+function renderFromSignin() {
+    let mainNode = document.querySelector('section[name="main"]')
+    let navNode = document.querySelector('nav')
+    let loginNode = document.querySelector('section[name="signin"]')
+    loginNode.hidden = true
+    navNode.hidden = false
+    mainNode.hidden = false
+}
+
 if ("geolocation" in navigator) {
     // Prompt user for permission to access their location
     navigator.geolocation.getCurrentPosition(
@@ -82,3 +100,5 @@ if ("geolocation" in navigator) {
 
 window.renderStorage = renderStorage
 window.renderMain = renderMain
+window.renderSignin = renderSignin
+window.renderFromSignin = renderFromSignin
